@@ -13,4 +13,9 @@ export class AuthService {
     signUp(authCredentialDto: AuthCredentialDto): Promise<void> {
         return this.UserRepository.signup(authCredentialDto);
     }
+
+    signIn(authCredentialDto: AuthCredentialDto) {
+        const result = this.UserRepository.validateUserPassword(authCredentialDto);
+        console.log(result);
+    }
 }
