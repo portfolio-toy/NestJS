@@ -1,2 +1,4 @@
+server:
+  origin: 프론트엔드 endpoint
 db:
   synchronize: false
